@@ -13,12 +13,19 @@ module inferred_latch(
 );
 
     always_comb begin
+<<<<<<< HEAD
         case (a)
+=======
+        case (c)
+>>>>>>> 575a3e30ac37f739fb38b00dd4c78501eb7f0df4
             2'b00: x = a & b;
             2'b01: x = a | b;
             2'b10: x = a ^ b;
             2'b11: x = ~(a & b);
+<<<<<<< HEAD
             default: x = 2'b00;
+=======
+>>>>>>> 575a3e30ac37f739fb38b00dd4c78501eb7f0df4
         endcase
     end
 
